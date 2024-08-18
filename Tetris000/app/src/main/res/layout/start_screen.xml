@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:id="@+id/Start"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="350dp"
+            android:background="#00FFFFFF"
+            android:onClick="onStart"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnplay"
+            android:textAllCaps="false"></ImageButton>
+        <ImageButton
+            android:id="@+id/Settings"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/Start"
+            android:layout_marginTop="30dp"
+            android:background="#00FFFFFF"
+            android:onClick="onSettings"
+            android:scaleType="fitCenter"
+            android:src="@drawable/st"
+            android:textAllCaps="false" />
+
+        <ImageButton
+            android:id="@+id/Exit"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/Settings"
+            android:layout_marginTop="30dp"
+            android:background="#00FFFFFF"
+            android:onClick="onExit"
+            android:scaleType="centerInside"
+            android:src="@drawable/exitt"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
